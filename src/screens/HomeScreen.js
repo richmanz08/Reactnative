@@ -1,6 +1,6 @@
 import React from "react";
-import { View, Text, StyleSheet, Button, Image } from "react-native";
-
+import { View, Text, StyleSheet, Image } from "react-native";
+import {Button} from 'react-native-elements'
 const HomeScreen = ({ navigation }) => {
   return (
     <View>
@@ -9,14 +9,31 @@ const HomeScreen = ({ navigation }) => {
       <Button
         title="Show"
         onPress={() => navigation.navigate("Component")}
+        type="outline"
+        raised
       ></Button>
       <Button
         title="Show"
         onPress={() => navigation.navigate("Counter")}
+        type="clear"
       ></Button>
       <Button
         title="Image"
         onPress={() => navigation.navigate("Image")}
+      ></Button>
+<Button
+        title="ListScreen"
+        onPress={() => navigation.navigate("List")}
+      ></Button>
+<Button
+        title="ContactScreen"
+        onPress={() => navigation.navigate("Contact")}
+      ></Button>
+      <Button
+        title="ApiScreen"
+        onPress={() => navigation.navigate("Api")}
+        raised
+        
       ></Button>
     </View>
   );
